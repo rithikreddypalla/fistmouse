@@ -1,11 +1,11 @@
 import cv2
 import mouse
 hand_width=10
-focal=959.2
-cascadePath = "C:/Users/Rithik/prog/aGest.xml"
+focal=#YOUR cameras focal length
+cascadePath = "your fist detecting harrcascade's location"
 faceCascade = cv2.CascadeClassifier(cascadePath)
 cam = cv2.VideoCapture(0)
-cam.set(3, 1535) 
+cam.set(3, 1535)#my laptop's screen size in pixels
 cam.set(4, 863)
 minW = 0.1*cam.get(3)
 minH = 0.1*cam.get(4)
