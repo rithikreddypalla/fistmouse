@@ -1,1 +1,30 @@
-this is a code with which we can control the position of the mouse using our fist and if we bring it close to the camera it clicks.the whole thing is a bit clumsy needs improvements
+
+FistMouse
+=========
+
+FistMouse lets you control your mouse pointer using your fist, detected via your webcam and OpenCV. If you bring your fist close to the camera, it triggers a mouse click.
+
+## Features
+- Move the mouse pointer by moving your fist in front of the camera
+- Click by bringing your fist close to the camera
+
+## Setup
+1. Install dependencies:
+	- `pip install opencv-python mouse`
+2. Download or train a Haar cascade for fist detection (e.g., `fist.xml`)
+3. Set the correct path to your Haar cascade in the script
+4. Adjust the focal length and screen size in the script for your setup
+5. Run the script: `python fistmouse.py`
+
+## Usage
+- Move your fist in front of the webcam to move the mouse pointer
+- Bring your fist close to the camera to click
+- Press ESC to exit
+
+## Improvements & Notes
+- The detection and control are basic and may need calibration for your environment
+- For best results, use in good lighting and with a clear background
+- Security: No sensitive data is stored, but always be careful with webcam access
+
+## Author's Note
+This is a fun computer vision experiment. The code is a bit clumsy and can be improved with better detection, smoothing, and calibration.
